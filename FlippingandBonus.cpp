@@ -874,36 +874,6 @@ vector<T> operator+(const vector<T>& x, const vector<T>& y) {
     r.insert(r.end(), y.begin(), y.end());
     return r;
 }
-ll n, pidx , qidx;
-vll p;
-vll q;
-vll curr;
-vbl used;
-vvll perm;
-ll cnt = 0;
-void dfs()
-{
-    if (len(curr) == n)
-    {
-        perm.pb(curr);
-        cnt++;
-        if (curr == p) pidx = cnt;
-        if (curr == q) qidx = cnt;
-        return ;
-    }
-    for (ll i = 1; i <= n; i++)
-    {
-        if (!used[i])
-        {
-            used[i] = true;
-            curr.pb(i);
-            dfs();
-            curr.pop_back();
-            used[i] = false;
-        }
-    }
-
-}
 
 int main()
 {
