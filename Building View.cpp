@@ -13,6 +13,7 @@ void setIO(string s)
 freopen((s + ".in").c_str(), "r", stdin);
 freopen((s + ".out").c_str(), "w", stdout);
 }
+
 #define overload5(_1,_2,_3,_4,_5,name,...) name
 #define overload4(_1,_2,_3,_4,name,...) name
 #define overload3(_1,_2,_3,name,...) name
